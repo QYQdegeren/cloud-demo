@@ -1,0 +1,10 @@
+server:
+  port: 10086
+
+spring:
+  application:
+    name: eurekaserver
+eureka:
+  client:
+    service-url: #eureka地址信息，eureka也会将自己作为微服务注册进去
+      defaultZone: http://localhost:10086/eureka
